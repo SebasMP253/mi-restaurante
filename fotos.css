@@ -1,0 +1,114 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #6f0000, #350202);
+    color: white;
+    border-bottom: 5px solid #1B5E20;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.profile-photo {
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 3px solid #6f0000;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #6f0000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #1B5E20;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+main {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #6f0000;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
+    color: #555;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-direction: column; /* Hace que las imágenes se apilen en columna */
+    gap: 15px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e8f5e9;
+}
+
+.photo-gallery img {
+    width: 100%; /* Mantiene las imágenes adaptables */
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.photo-caption {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    margin-top: 8px;
+}
+
+footer {
+    background-color: #6f0000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
